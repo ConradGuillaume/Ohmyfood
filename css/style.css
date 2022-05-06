@@ -256,10 +256,15 @@
           animation-delay: 1s;
 }
 
+body {
+  margin: 0%;
+}
+
 header {
   -webkit-animation: loaded 5s;
           animation: loaded 5s;
   font-family: "Roboto";
+  width: 100%;
 }
 
 .logo {
@@ -355,6 +360,21 @@ header {
   margin-left: 3%;
 }
 
+@media (min-width: 768px) {
+  #fonctionnement {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0% 0% 5% 0%;
+  }
+}
+
 #fonctionnement h2 {
   font-weight: 700;
   font-family: "Roboto";
@@ -380,6 +400,19 @@ header {
   margin: 0% 5% 0% 5%;
   z-index: 2;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  #fonctionnement .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 70%;
+    height: 20%;
+  }
 }
 
 #fonctionnement .btn:hover {
@@ -418,7 +451,7 @@ header {
 main {
   -webkit-animation: loaded 5s;
           animation: loaded 5s;
-  height: 1000px;
+  height: 100%;
   background-color: rgba(223, 219, 219, 0.596);
   font-family: "roboto";
   display: -webkit-box;
@@ -444,6 +477,12 @@ main .card {
   margin: 2% 0% 2% 0%;
 }
 
+@media (min-width: 768px) {
+  main .card {
+    height: 400px;
+  }
+}
+
 main .card__img {
   width: 100%;
   height: 75%;
@@ -459,6 +498,12 @@ main h2 {
 
 .card__title {
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .card__title {
+    top: 5%;
+  }
 }
 
 .card__title h4 {
