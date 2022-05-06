@@ -1,0 +1,48 @@
+@mixin purpleheart {
+  animation: fillheart 1s forwards;
+  color: #9c47fc;
+  background: -webkit-linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin footer {
+  background-color: rgb(56, 56, 56);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  h3 {
+    font-family: "shrikhand";
+    color: white;
+    margin: 3% 0% 0% 5%;
+    font-weight: 100;
+    font-size: 15px;
+  }
+  ul {
+    list-style: none;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 0%;
+    margin-left: 5%;
+    color: white;
+  }
+  i {
+    font-size: 12px;
+    margin-right: 2%;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+@mixin pink_button {
+  border-radius: 25px 25px;
+  margin-bottom: 20%;
+  border: none;
+  height: 50px;
+  font-weight: 700;
+  background-color: #ff79da;
+  box-shadow: inset -1em -1em 20px 0px #9356dc;
+}

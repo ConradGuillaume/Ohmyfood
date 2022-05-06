@@ -1,0 +1,76 @@
+/*ANIMATION ETOILE */
+@keyframes fillheart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: Rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes glow {
+  0% {
+    color: #ff79da;
+    text-shadow: 0 0 7px #ff79da;
+  }
+  90% {
+    color: #9356dc;
+    text-shadow: none;
+  }
+  100% {
+    color: #ff79da;
+    text-shadow: 0 0 7px #ff79da;
+  }
+}
+@keyframes loaded {
+  0% {
+    opacity: -1;
+  }
+  25% {
+    opacity: -1;
+  }
+  50% {
+    opacity: -1;
+  }
+  75% {
+    opacity: -1;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 2;
+  }
+  25% {
+    opacity: 2;
+  }
+  50% {
+    opacity: 2;
+  }
+  75% {
+    opacity: 2;
+  }
+  100% {
+    opacity: -5;
+  }
+}
+@keyframes btnanim {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

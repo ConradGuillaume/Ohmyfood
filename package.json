@@ -1,0 +1,11 @@
+{
+  "name": "setup-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/style.scss:./css/style.css./scss/carte.scss./css/Restaurant1.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

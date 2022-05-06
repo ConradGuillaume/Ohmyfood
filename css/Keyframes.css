@@ -1,0 +1,167 @@
+/*ANIMATION ETOILE */
+@-webkit-keyframes fillheart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fillheart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: Rotate(0deg);
+            transform: Rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: Rotate(0deg);
+            transform: Rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes glow {
+  0% {
+    color: #ff79da;
+    text-shadow: 0 0 7px #ff79da;
+  }
+  90% {
+    color: #9356dc;
+    text-shadow: none;
+  }
+  100% {
+    color: #ff79da;
+    text-shadow: 0 0 7px #ff79da;
+  }
+}
+
+@keyframes glow {
+  0% {
+    color: #ff79da;
+    text-shadow: 0 0 7px #ff79da;
+  }
+  90% {
+    color: #9356dc;
+    text-shadow: none;
+  }
+  100% {
+    color: #ff79da;
+    text-shadow: 0 0 7px #ff79da;
+  }
+}
+
+@-webkit-keyframes loaded {
+  0% {
+    opacity: -1;
+  }
+  25% {
+    opacity: -1;
+  }
+  50% {
+    opacity: -1;
+  }
+  75% {
+    opacity: -1;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
+@keyframes loaded {
+  0% {
+    opacity: -1;
+  }
+  25% {
+    opacity: -1;
+  }
+  50% {
+    opacity: -1;
+  }
+  75% {
+    opacity: -1;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 2;
+  }
+  25% {
+    opacity: 2;
+  }
+  50% {
+    opacity: 2;
+  }
+  75% {
+    opacity: 2;
+  }
+  100% {
+    opacity: -5;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 2;
+  }
+  25% {
+    opacity: 2;
+  }
+  50% {
+    opacity: 2;
+  }
+  75% {
+    opacity: 2;
+  }
+  100% {
+    opacity: -5;
+  }
+}
+
+@-webkit-keyframes btnanim {
+  0% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes btnanim {
+  0% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}

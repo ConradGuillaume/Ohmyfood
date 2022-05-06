@@ -1,0 +1,186 @@
+$check: #00e0b0;
+@import "./utils/Keyframes.scss";
+@import "./utils/mixin.scss";
+.menu__body {
+  font-family: "roboto";
+}
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  h1 {
+    font-family: "shrikhand";
+    margin: 0;
+  }
+  i {
+    position: absolute;
+    font-size: 25px;
+    color: black;
+    font-weight: 900;
+    left: 5%;
+    top: 25%;
+  }
+}
+.menu {
+  height: 70%;
+  figure {
+    margin: 0%;
+  }
+  .menu__background {
+    width: 100%;
+    object-fit: contain;
+    z-index: 0;
+  }
+  .menu__img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    z-index: 0;
+  }
+}
+
+.menu__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgb(233, 233, 233);
+  border-radius: 30px 30px 15px 15px;
+  margin-top: -13%;
+  z-index: 2;
+  .card__header {
+    display: flex;
+    justify-content: flex-start;
+  }
+  h2 {
+    font-family: "shrikhand";
+    font-weight: 300;
+    width: 80%;
+    margin-left: 4%;
+  }
+}
+.card__heart {
+  position: absolute;
+  left: 80%;
+  width: 20%;
+  cursor: pointer;
+  top: 1%;
+  right: 15%;
+  .fa-stack {
+    font-size: 25px;
+    .fa-solid {
+      opacity: 0;
+      &:hover {
+        @include purpleheart;
+      }
+    }
+  }
+}
+
+.btn {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 8px 0px #aaaaaa;
+  margin-bottom: 3%;
+  display: flex;
+  overflow: hidden;
+  opacity: 0;
+  margin: 3% 3% 3% 3%;
+  &:hover {
+    .btn__body__animation {
+      width: 25%;
+      .fa-check-circle {
+        animation: 1s rotate;
+      }
+    }
+  }
+}
+.btn__body {
+  display: flex;
+  width: 100%;
+  &__animation {
+    display: flex;
+    background: #00e0b0;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    height: 100%;
+    width: 0%;
+    transition: all 600ms;
+    .fa-check-circle {
+      color: #fff;
+      font-size: 25px;
+    }
+  }
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 20%;
+  }
+}
+.btn__body__name {
+  width: 80%;
+  &--label {
+    font-size: 18px;
+    margin: 2% 0% 2% 4%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  h4 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    margin: 1% 0% 0% 4%;
+  }
+}
+h3 {
+  font-family: "roboto";
+  font-weight: 400;
+  border-bottom: 4px solid $check;
+  width: 45px;
+  padding-bottom: 2px;
+  margin-left: 4%;
+}
+.orderBtn {
+  @include pink_button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 15% 25% 15% 25%;
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+footer {
+  @include footer;
+  h3 {
+    border-bottom: none;
+  }
+}
+
+.entrees {
+  .btn {
+    animation: btnanim 2s forwards;
+  }
+}
+.plats {
+  .btn {
+    animation: btnanim 2s forwards;
+    animation-delay: 1s;
+  }
+}
+.desserts {
+  .btn {
+    animation: btnanim 2s forwards;
+    animation-delay: 2s;
+  }
+}
