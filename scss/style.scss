@@ -73,6 +73,7 @@ header {
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
+  margin-top: 5%;
   .logo__img {
     width: 40%;
   }
@@ -209,7 +210,7 @@ main {
   }
 }
 .card__title {
-  @media (min-width: $breakpoint-tablet){
+  @media (min-width: $breakpoint-tablet) {
     top: 5%;
   }
   position: relative;

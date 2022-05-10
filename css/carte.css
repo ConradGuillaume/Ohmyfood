@@ -221,6 +221,12 @@ header i {
   z-index: 0;
 }
 
+@media (min-width: 768px) {
+  .menu .menu__img {
+    height: 450px;
+  }
+}
+
 .menu__body {
   position: relative;
   display: -webkit-box;
@@ -296,6 +302,13 @@ header i {
   margin: 3% 3% 3% 3%;
 }
 
+@media (min-width: 768px) {
+  .btn {
+    height: 80px;
+    margin: 3% 3% 3% 3%;
+  }
+}
+
 .btn:hover .btn__body__animation {
   width: 25%;
 }
@@ -353,6 +366,21 @@ header i {
 .btn__body__name {
   width: 70%;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .btn__body__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .btn__body__name--label {
