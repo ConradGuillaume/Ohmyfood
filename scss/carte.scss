@@ -118,16 +118,17 @@ header {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 20%;
+    width: 30%;
   }
 }
 .btn__body__name {
-  width: 80%;
+  width: 70%;
+  overflow: hidden;
   &--label {
     font-size: 18px;
-    margin: 2% 0% 2% 4%;
-    overflow: hidden;
+    margin: 2px 0px 2px 4px;
     white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
   }
   h4 {
@@ -135,7 +136,7 @@ header {
     white-space: nowrap;
     text-overflow: ellipsis;
     font-size: 20px;
-    margin: 1% 0% 0% 4%;
+    margin: 2px 0px 0px 4px;
   }
 }
 h3 {
