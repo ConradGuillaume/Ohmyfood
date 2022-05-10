@@ -274,12 +274,18 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 5%;
-  margin-top: 5%;
 }
 
 .logo .logo__img {
   width: 40%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+@media (min-width: 992px) {
+  .logo .logo__img {
+    width: 10%;
+  }
 }
 
 .gps {
@@ -326,8 +332,20 @@ header {
   padding: 0% 4% 0% 4%;
 }
 
+@media (min-width: 992px) {
+  .menu {
+    padding-top: 5%;
+  }
+}
+
 .menu p {
   margin: 0% 0% 10% 0%;
+}
+
+@media (min-width: 992px) {
+  .menu p {
+    margin: 0% 0% 5% 0%;
+  }
 }
 
 .menu .menu__explorer {
@@ -376,9 +394,21 @@ header {
   }
 }
 
+@media (min-width: 992px) {
+  #fonctionnement {
+    margin-bottom: 0%;
+  }
+}
+
 #fonctionnement h2 {
   font-weight: 700;
   font-family: "Roboto";
+}
+
+@media (min-width: 992px) {
+  #fonctionnement h2 {
+    position: relative;
+  }
 }
 
 #fonctionnement .btn {
@@ -405,14 +435,16 @@ header {
 
 @media (min-width: 768px) {
   #fonctionnement .btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 70%;
     height: 20%;
+  }
+}
+
+@media (min-width: 992px) {
+  #fonctionnement .btn {
+    height: 25%;
+    margin-bottom: 2%;
+    width: 30%;
   }
 }
 
@@ -467,6 +499,20 @@ main {
           align-items: center;
 }
 
+@media (min-width: 992px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 main .card {
   position: relative;
   background-color: white;
@@ -480,7 +526,15 @@ main .card {
 
 @media (min-width: 768px) {
   main .card {
-    height: 400px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  main .card {
+    width: 30%;
+    height: 270px;
+    margin: 2% 10% 2% 10%;
   }
 }
 
@@ -495,6 +549,14 @@ main .card__img {
 main h2 {
   font-weight: 900;
   margin-left: -60%;
+}
+
+@media (min-width: 992px) {
+  main h2 {
+    width: 100%;
+    margin: 3% 0% 0% 0%;
+    text-align: center;
+  }
 }
 
 .card__title {
