@@ -305,11 +305,14 @@ footer {
   h3 {
     font-family: "shrikhand";
     color: white;
-    margin: 3% 0% 0% 5%;
+    margin: 2% 0% 0% 5%;
     font-weight: 100;
     font-size: 15px;
   }
   ul {
+    @media (min-width: $breakpoint-desktop) {
+      margin-bottom: 10%;
+    }
     list-style: none;
     font-size: 13px;
     line-height: 18px;

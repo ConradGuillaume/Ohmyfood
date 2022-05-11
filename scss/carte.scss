@@ -29,6 +29,11 @@ header {
     margin: 0%;
   }
   .menu__background {
+    @media (min-width: $breakpoint-desktop) {
+      width: 100%;
+      object-fit: cover;
+      height: 600px;
+    }
     width: 100%;
     object-fit: contain;
     z-index: 0;
@@ -45,6 +50,11 @@ header {
 }
 
 .menu__body {
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
   position: relative;
   display: flex;
   flex-direction: column;
@@ -54,6 +64,9 @@ header {
   margin-top: -13%;
   z-index: 2;
   .card__header {
+    @media (min-width: $breakpoint-desktop) {
+      width: 100%;
+    }
     display: flex;
     justify-content: flex-start;
   }
@@ -160,12 +173,18 @@ h3 {
   margin-left: 4%;
 }
 .orderBtn {
+  @media (min-width: $breakpoint-desktop) {
+    margin: 7.5% 0% 0% 18%;
+    width: 4%;
+    border-radius: 50%;
+    padding: 5%;
+  }
   @include pink_button;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
-  margin: 15% 25% 15% 25%;
+  margin: 15% 50% 15% 50%;
   a {
     color: #fff;
     text-decoration: none;
@@ -174,6 +193,10 @@ h3 {
   }
 }
 footer {
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    justify-content: center;
+  }
   @include footer;
   h3 {
     border-bottom: none;
@@ -181,17 +204,26 @@ footer {
 }
 
 .entrees {
+  @media (min-width: $breakpoint-desktop) {
+    width: 50%;
+  }
   .btn {
     animation: btnanim 2s forwards;
   }
 }
 .plats {
+  @media (min-width: $breakpoint-desktop) {
+    width: 50%;
+  }
   .btn {
     animation: btnanim 2s forwards;
     animation-delay: 1s;
   }
 }
 .desserts {
+  @media (min-width: $breakpoint-desktop) {
+    width: 50%;
+  }
   .btn {
     animation: btnanim 2s forwards;
     animation-delay: 2s;

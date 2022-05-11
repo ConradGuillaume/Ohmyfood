@@ -213,6 +213,15 @@ header i {
   z-index: 0;
 }
 
+@media (min-width: 992px) {
+  .menu .menu__background {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 600px;
+  }
+}
+
 .menu .menu__img {
   width: 100%;
   height: 250px;
@@ -245,6 +254,20 @@ header i {
   z-index: 2;
 }
 
+@media (min-width: 992px) {
+  .menu__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .menu__body .card__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,6 +275,12 @@ header i {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media (min-width: 992px) {
+  .menu__body .card__header {
+    width: 100%;
+  }
 }
 
 .menu__body h2 {
@@ -427,7 +456,16 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   width: 50%;
-  margin: 15% 25% 15% 25%;
+  margin: 15% 50% 15% 50%;
+}
+
+@media (min-width: 992px) {
+  .orderBtn {
+    margin: 7.5% 0% 0% 18%;
+    width: 4%;
+    border-radius: 50%;
+    padding: 5%;
+  }
 }
 
 .orderBtn a {
@@ -450,6 +488,17 @@ footer {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media (min-width: 992px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 footer h3 {
@@ -483,9 +532,21 @@ footer h3 {
   border-bottom: none;
 }
 
+@media (min-width: 992px) {
+  .entrees {
+    width: 50%;
+  }
+}
+
 .entrees .btn {
   -webkit-animation: btnanim 2s forwards;
           animation: btnanim 2s forwards;
+}
+
+@media (min-width: 992px) {
+  .plats {
+    width: 50%;
+  }
 }
 
 .plats .btn {
@@ -493,6 +554,12 @@ footer h3 {
           animation: btnanim 2s forwards;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
+}
+
+@media (min-width: 992px) {
+  .desserts {
+    width: 50%;
+  }
 }
 
 .desserts .btn {
