@@ -456,7 +456,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   width: 50%;
-  margin: 15% 50% 15% 50%;
+  margin: 15% 25% 15% 25%;
 }
 
 @media (min-width: 992px) {
