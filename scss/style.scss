@@ -10,13 +10,14 @@
 @import "./utils/mixin.scss";
 @import "./utils/variables.scss";
 $radius: 10px 10px 0px 0px;
-$radiusfull: 10px 10px 10px 10px;
-
+$radiusfull: 10px;
+$animationdelay: 0.1s;
 .loader {
-  position: absolute;
+  position: fixed;
+  top: 0;
   background: linear-gradient(to right, #9356dc2e, #ff79da85, #99e2d0ad);
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -29,35 +30,10 @@ $radiusfull: 10px 10px 10px 10px;
     margin-bottom: 150px;
     animation: glow 2s linear infinite;
   }
-  .lettre:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-  .lettre:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-  .lettre:nth-child(3) {
-    animation-delay: 0.3s;
-  }
-  .lettre:nth-child(4) {
-    animation-delay: 0.4s;
-  }
-  .lettre:nth-child(5) {
-    animation-delay: 0.5s;
-  }
-  .lettre:nth-child(6) {
-    animation-delay: 0.6s;
-  }
-  .lettre:nth-child(7) {
-    animation-delay: 0.7s;
-  }
-  .lettre:nth-child(8) {
-    animation-delay: 0.8s;
-  }
-  .lettre:nth-child(9) {
-    animation-delay: 0.9s;
-  }
-  .lettre:nth-child(10) {
-    animation-delay: 1s;
+  @for $i from 1 to 11 {
+    .lettre:nth-child(#{$i}) {
+      animation-delay: $i * $animationdelay;
+    }
   }
 }
 body {
