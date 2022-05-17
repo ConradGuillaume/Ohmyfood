@@ -291,13 +291,8 @@ main {
 }
 footer {
   animation: loaded 5s;
-  background-color: rgb(56, 56, 56);
-  height: 150px;
   font-family: "roboto";
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 0;
+  @include footer;
   h3 {
     font-family: "shrikhand";
     color: white;

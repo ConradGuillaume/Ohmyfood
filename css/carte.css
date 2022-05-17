@@ -477,6 +477,7 @@ h3 {
           align-items: center;
   width: 50%;
   margin: 15% 25% 15% 25%;
+  cursor: pointer;
 }
 
 @media (min-width: 992px) {
