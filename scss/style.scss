@@ -12,6 +12,7 @@
 $radius: 10px 10px 0px 0px;
 $radiusfull: 10px;
 $animationdelay: 0.1s;
+
 .loader {
   position: fixed;
   top: 0;
@@ -26,7 +27,7 @@ $animationdelay: 0.1s;
   .lettre {
     color: #9356dc;
     font-size: 30px;
-    letter-spacing: 15px;
+    letter-spacing: 13px;
     margin-bottom: 150px;
     animation: glow 2s linear infinite;
   }
@@ -69,8 +70,16 @@ header {
   a {
     color: black;
   }
-  .gps__txt {
-    margin-left: 5%;
+  .gps__location {
+    margin-left: 0%;
+    border: none;
+    background: none;
+    text-align: center;
+    outline: none;
+    padding: 2% 0% 2% 0%;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 120px;
   }
 }
 .menu {
@@ -85,6 +94,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 0% 4% 0% 4%;
+  z-index: 2;
   p {
     @media (min-width: $breakpoint-desktop) {
       margin: 0% 0% 5% 0%;
@@ -99,8 +109,12 @@ header {
     width: auto;
     color: white;
     font-weight: 700;
-    background-color: #ff79da;
-    box-shadow: inset -1em -1em 20px 0px #9356dc;
+    background: linear-gradient(#ff79da, #9356dc);
+    cursor: pointer;
+    z-index: 2;
+    &:hover {
+      @include btn_shadow;
+    }
   }
 }
 #fonctionnement {
@@ -151,7 +165,7 @@ header {
     cursor: pointer;
     &:hover {
       background: #ff79d93f;
-      box-shadow: 0px 0px 8px 0px #6e6e6e;
+      @include btn_shadow;
       .btn__logo {
         color: #9356dc;
       }
@@ -186,6 +200,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 10%;
   .card {
     @media (min-width: $breakpoint-tablet) {
       height: 300px;
@@ -202,6 +217,10 @@ main {
     width: 90%;
     height: 200px;
     margin: 2% 0% 2% 0%;
+    cursor: pointer;
+    &:hover {
+      @include btn_shadow;
+    }
   }
   .card__img {
     width: 100%;
@@ -274,6 +293,7 @@ footer {
   animation: loaded 5s;
   background-color: rgb(56, 56, 56);
   height: 150px;
+  font-family: "roboto";
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

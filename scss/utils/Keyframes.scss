@@ -45,6 +45,7 @@
   }
   100% {
     opacity: 2;
+    z-index: 5;
   }
 }
 @keyframes loader {
@@ -62,6 +63,7 @@
   }
   100% {
     opacity: -5;
+    z-index: -5;
   }
 }
 @keyframes btnanim {
@@ -74,3 +76,4 @@
     opacity: 1;
   }
 }
+

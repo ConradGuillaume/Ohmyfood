@@ -107,8 +107,10 @@ header {
   display: flex;
   overflow: hidden;
   opacity: 0;
-  margin: 3% 3% 3% 3%;
+  margin: 5% 3% 5% 3%;
+  height:65px;
   &:hover {
+    @include btn_shadow;
     .btn__body__animation {
       width: 25%;
       .fa-check-circle {
@@ -128,6 +130,7 @@ header {
     order: 2;
     height: 100%;
     width: 0%;
+
     transition: all 600ms;
     .fa-check-circle {
       color: #fff;
@@ -147,6 +150,9 @@ header {
     flex-direction: column;
     justify-content: center;
   }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 70%;
   overflow: hidden;
   &--label {
