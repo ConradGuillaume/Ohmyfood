@@ -240,6 +240,12 @@ header i {
   }
 }
 
+@media (min-width: 992px) {
+  .menu .menu__img {
+    height: 550px;
+  }
+}
+
 .menu__body {
   position: relative;
   display: -webkit-box;

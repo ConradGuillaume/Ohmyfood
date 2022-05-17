@@ -42,6 +42,9 @@ header {
     @media (min-width: $breakpoint-tablet) {
       height: 450px;
     }
+    @media (min-width: $breakpoint-desktop) {
+      height: 550px;
+    }
     width: 100%;
     height: 250px;
     object-fit: cover;

@@ -1,11 +1,19 @@
 {
-  "name": "setup-sass",
+  "name": "ohmyfood",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./scss/style.scss:./css/style.css./scss/carte.scss./css/Restaurant1.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConradGuillaume/Ohmyfood.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConradGuillaume/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/ConradGuillaume/Ohmyfood#readme"
 }
