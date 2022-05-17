@@ -481,10 +481,10 @@ h3 {
 
 @media (min-width: 992px) {
   .orderBtn {
-    margin: 7.5% 0% 0% 18%;
-    width: 4%;
-    border-radius: 50%;
-    padding: 5%;
+    margin: 170px 0px 0px 200px;
+    width: 25%;
+    height: 85px;
+    border-radius: 15px;
   }
 }
 
@@ -518,6 +518,7 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding-bottom: 2%;
   }
 }
 
