@@ -177,12 +177,12 @@ h4 {
   }
   .btn__num {
     @media (min-width: $breakpoint-desktop) {
-      height: 75%;
-      width: 60px;
+      height: 55%;
+      width: 40px;
     }
     @media (min-width: $breakpoint-tablet) {
-      height: 75%;
-      width: 60px;
+      height: 55%;
+      width: 40px;
     }
     color: white;
     background: #9356dc;
