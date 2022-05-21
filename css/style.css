@@ -1,4 +1,5 @@
 /*ANIMATION ETOILE */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 @-webkit-keyframes fillheart {
   from {
     opacity: 0;
@@ -490,8 +491,8 @@ h4 {
   color: white;
   background: #9356dc;
   border-radius: 50%;
-  width: 9%;
-  height: 50%;
+  width: 30px;
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,18 +502,20 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0% 5% 0% -4%;
+  margin: 0% 5% 0% -3%;
 }
 
 @media (min-width: 992px) {
   #fonctionnement .btn__num {
-    height: 65%;
+    height: 75%;
+    width: 60px;
   }
 }
 
 @media (min-width: 768px) {
   #fonctionnement .btn__num {
-    height: 60%;
+    height: 75%;
+    width: 60px;
   }
 }
 
@@ -612,12 +615,15 @@ main h2 {
 }
 
 .card__title h4 {
+  font-family: "roboto";
+  font-size: 20px;
   font-weight: 900;
   margin: 0% 0% 0% 3%;
 }
 
 .card__title span {
   margin-left: 3%;
+  font-weight: lighter;
 }
 
 .card__heart {

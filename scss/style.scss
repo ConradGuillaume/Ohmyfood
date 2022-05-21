@@ -1,7 +1,7 @@
 @import "./utils/Keyframes.scss";
 @import "./utils/mixin.scss";
 @import "./utils/variables.scss";
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 .loader {
   position: fixed;
   top: 0;
@@ -177,20 +177,22 @@ h4 {
   }
   .btn__num {
     @media (min-width: $breakpoint-desktop) {
-      height: 65%;
+      height: 75%;
+      width: 60px;
     }
     @media (min-width: $breakpoint-tablet) {
-      height: 60%;
+      height: 75%;
+      width: 60px;
     }
     color: white;
     background: #9356dc;
     border-radius: 50%;
-    width: 9%;
-    height: 50%;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0% 5% 0% -4%;
+    margin: 0% 5% 0% -3%;
   }
 }
 main {
@@ -250,11 +252,14 @@ main {
   }
   position: relative;
   h4 {
+    font-family: "roboto";
+    font-size: 20px;
     font-weight: 900;
     margin: 0% 0% 0% 3%;
   }
   span {
     margin-left: 3%;
+    font-weight: lighter;
   }
 }
 .card__heart {
