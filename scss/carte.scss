@@ -1,6 +1,10 @@
 @import "./utils/Keyframes.scss";
 @import "./utils/mixin.scss";
 @import "./utils/variables.scss";
+body {
+  margin: 0%;
+}
+
 .menu__body {
   font-family: "roboto";
 }
@@ -25,6 +29,7 @@ header {
 }
 .menu {
   height: 70%;
+  width: 100%;
   figure {
     margin: 0%;
   }
@@ -62,7 +67,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(246, 246, 246);
   border-radius: 30px 30px 15px 15px;
   margin-top: -13%;
   z-index: 2;
@@ -127,7 +132,7 @@ header {
   width: 100%;
   &__animation {
     display: flex;
-    background: #00e0b0;
+    background: rgb(153, 226, 208);
     justify-content: center;
     align-items: center;
     order: 2;
@@ -169,14 +174,15 @@ header {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-size: 20px;
+    font-size: 22px;
     margin: 2px 0px 0px 4px;
+    font-weight: bolder;
   }
 }
 h3 {
   font-family: "roboto";
   font-weight: 400;
-  border-bottom: 4px solid $check;
+  border-bottom: 4px solid #99e2d0;
   width: 45px;
   padding-bottom: 2px;
   margin-left: 4%;
@@ -185,16 +191,21 @@ h3 {
   @media (min-width: $breakpoint-desktop) {
     margin: 170px 0px 0px 200px;
     width: 25%;
-    height: 85px;
-    border-radius: 15px;
+    height: 45px;
+    border-radius: 25px;
   }
   @include pink_button;
+  background: linear-gradient(#ff79da, #9356dc);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
   margin: 15% 25% 15% 25%;
   cursor: pointer;
+  &:hover {
+    @include btn_shadow;
+  }
+
   a {
     color: #fff;
     text-decoration: none;
