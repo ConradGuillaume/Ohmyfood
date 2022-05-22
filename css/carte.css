@@ -581,6 +581,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     padding-bottom: 2%;
+    font-family: "roboto";
   }
 }
 
@@ -616,6 +617,7 @@ footer h3 {
 }
 
 footer ul {
+  font-family: "roboto";
   line-height: 22px;
 }
 

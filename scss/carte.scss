@@ -249,6 +249,7 @@ footer {
     display: flex;
     justify-content: center;
     padding-bottom: 2%;
+    font-family: "roboto";
   }
   @media (min-width: $breakpoint-tablet) {
     padding-bottom: 2%;
@@ -259,6 +260,7 @@ footer {
     border-bottom: none;
   }
   ul {
+    font-family: "roboto";
     line-height: 22px;
   }
   .fa-utensils {
