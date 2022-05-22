@@ -303,6 +303,7 @@ main {
 footer {
   animation: loaded 5s;
   font-family: "roboto";
+  padding-bottom: 1%;
   @include footer;
   h3 {
     font-family: "shrikhand";
@@ -313,18 +314,20 @@ footer {
   }
   ul {
     @media (min-width: $breakpoint-desktop) {
-      margin-bottom: 10%;
+      padding-bottom: 0%;
     }
     list-style: none;
     font-size: 13px;
-    line-height: 18px;
+    line-height: 22px;
     padding: 0%;
     margin-left: 5%;
     color: white;
   }
-  i {
-    font-size: 12px;
-    margin-right: 2%;
+  .fa-utensils {
+    margin-right: 15px;
+  }
+  .fa-hands-helping {
+    margin-right: 13px;
   }
   a {
     color: #fff;

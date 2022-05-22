@@ -679,6 +679,7 @@ footer {
   -webkit-animation: loaded 5s;
           animation: loaded 5s;
   font-family: "roboto";
+  padding-bottom: 1%;
   background-color: #383838;
   height: 150px;
   display: -webkit-box;
@@ -704,15 +705,9 @@ footer h3 {
 footer ul {
   list-style: none;
   font-size: 13px;
-  line-height: 18px;
   padding: 0%;
   margin-left: 5%;
   color: white;
-}
-
-footer i {
-  font-size: 12px;
-  margin-right: 2%;
 }
 
 footer a {
@@ -731,7 +726,7 @@ footer h3 {
 footer ul {
   list-style: none;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 22px;
   padding: 0%;
   margin-left: 5%;
   color: white;
@@ -739,13 +734,16 @@ footer ul {
 
 @media (min-width: 992px) {
   footer ul {
-    margin-bottom: 10%;
+    padding-bottom: 0%;
   }
 }
 
-footer i {
-  font-size: 12px;
-  margin-right: 2%;
+footer .fa-utensils {
+  margin-right: 15px;
+}
+
+footer .fa-hands-helping {
+  margin-right: 13px;
 }
 
 footer a {

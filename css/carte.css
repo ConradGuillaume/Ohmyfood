@@ -1,4 +1,5 @@
 /*ANIMATION ETOILE */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 @-webkit-keyframes fillheart {
   from {
     opacity: 0;
@@ -455,9 +456,12 @@ header i {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 22px;
+  font-size: 19px;
   margin: 2px 0px 0px 4px;
-  font-weight: bolder;
+}
+
+.btn__body__name p {
+  font-weight: lighter;
 }
 
 h3 {
@@ -515,64 +519,6 @@ h3 {
   padding-right: 3%;
 }
 
-footer {
-  background-color: #383838;
-  height: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-@media (min-width: 992px) {
-  footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-bottom: 2%;
-  }
-}
-
-footer h3 {
-  font-family: "shrikhand";
-  color: white;
-  margin: 3% 0% 0% 5%;
-  font-weight: 100;
-  font-size: 15px;
-}
-
-footer ul {
-  list-style: none;
-  font-size: 13px;
-  line-height: 18px;
-  padding: 0%;
-  margin-left: 5%;
-  color: white;
-}
-
-footer i {
-  font-size: 12px;
-  margin-right: 2%;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer h3 {
-  border-bottom: none;
-}
-
 @media (min-width: 992px) {
   .entrees {
     width: 50%;
@@ -608,4 +554,75 @@ footer h3 {
           animation: btnanim 2s forwards;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
+}
+
+footer {
+  background-color: #383838;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 1%;
+}
+
+@media (min-width: 992px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 2%;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding-bottom: 2%;
+  }
+}
+
+footer h3 {
+  font-family: "shrikhand";
+  color: white;
+  margin: 3% 0% 0% 5%;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+footer ul {
+  list-style: none;
+  font-size: 13px;
+  padding: 0%;
+  margin-left: 5%;
+  color: white;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer h3 {
+  border-bottom: none;
+}
+
+footer ul {
+  line-height: 22px;
+}
+
+footer .fa-utensils {
+  margin-right: 15px;
+}
+
+footer .fa-hands-helping {
+  margin-right: 9px;
 }

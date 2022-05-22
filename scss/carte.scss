@@ -1,6 +1,7 @@
 @import "./utils/Keyframes.scss";
 @import "./utils/mixin.scss";
 @import "./utils/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 body {
   margin: 0%;
 }
@@ -174,9 +175,11 @@ header {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    font-size: 22px;
+    font-size: 19px;
     margin: 2px 0px 0px 4px;
-    font-weight: bolder;
+  }
+  p {
+    font-weight: lighter;
   }
 }
 h3 {
@@ -213,17 +216,6 @@ h3 {
     padding-right: 3%;
   }
 }
-footer {
-  @media (min-width: $breakpoint-desktop) {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2%;
-  }
-  @include footer;
-  h3 {
-    border-bottom: none;
-  }
-}
 
 .entrees {
   @media (min-width: $breakpoint-desktop) {
@@ -249,5 +241,30 @@ footer {
   .btn {
     animation: btnanim 2s forwards;
     animation-delay: 2s;
+  }
+}
+
+footer {
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+  }
+  @media (min-width: $breakpoint-tablet) {
+    padding-bottom: 2%;
+  }
+  @include footer;
+  padding-bottom: 1%;
+  h3 {
+    border-bottom: none;
+  }
+  ul {
+    line-height: 22px;
+  }
+  .fa-utensils {
+    margin-right: 15px;
+  }
+  .fa-hands-helping {
+    margin-right: 9px;
   }
 }
